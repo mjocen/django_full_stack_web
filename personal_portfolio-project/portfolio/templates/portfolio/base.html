@@ -5,8 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	{% load static %}
+	{% load compress %}
+	{% compress css %}
+		<link type="text/x-scss" href="{% static 'bootstrap/bootstrap.scss' %}" rel="stylesheet" media="screen">
+	{% endcompress %}
 
     <title>Josie Bytes</title>
   </head>
@@ -14,7 +17,7 @@
 
 	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #8e0a7a;">
 	<div class="container">
-		<a class="navbar-brand" href="{% url 'home' %}" style="color: #FFFFFF;">Josie Bytes</a>
+		<a class="navbar-brand" href="{% url 'home' %}" style="color: #FFFFFF; font-family: futura;">Josie Bytes</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 		</button>
