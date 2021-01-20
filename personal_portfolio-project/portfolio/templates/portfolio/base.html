@@ -12,45 +12,27 @@
   </head>
   <body>
 
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-	<div class="container-fluid">
-		<a class="navbar-brand" href="#">Navbar</a>
+	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #8e0a7a;">
+	<div class="container">
+		<a class="navbar-brand" href="{% url 'home' %}" style="color: #FFFFFF;">Josie Bytes</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 		</button>
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 		<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 			<li class="nav-item">
-			<a class="nav-link active" aria-current="page" href="#">Home</a>
+				<a class="nav-link" aria-current="page" href="{% url 'blog:all_blogs' %}">Blog</a>
 			</li>
 			<li class="nav-item">
-			<a class="nav-link" href="#">Link</a>
-			</li>
-			<li class="nav-item dropdown">
-			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-				Dropdown
-			</a>
-			<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-				<li><a class="dropdown-item" href="#">Action</a></li>
-				<li><a class="dropdown-item" href="#">Another action</a></li>
-				<li><hr class="dropdown-divider"></li>
-				<li><a class="dropdown-item" href="#">Something else here</a></li>
-			</ul>
-			</li>
-			<li class="nav-item">
-			<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+				<a class="nav-link" href="https://www.linkedin.com/in/jocenpagayona/">LinkedIn</a>
 			</li>
 		</ul>
-		<form class="d-flex">
-			<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-			<button class="btn btn-outline-success" type="submit">Search</button>
-		</form>
 		</div>
 	</div>
 	</nav>
-	
-	{% block content %}{% endblock %}
-
+	<div class="container">
+		{% block content %}{% endblock %}
+	</div>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -62,14 +44,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 	-->
 
-	<footer class="footer">
+	<footer class="footer pt-3" style="background-color: #8e0a7a;">
 		<div class="container">
 		<!-- Copyright footnote -->
-		  © 2020 Some copyright message.
+			<div class="row">
+				<h6 class="col">Josie Bytes © 2020</h6>
+				<span class="col text-end">
+					<address>Contact me <a href="mailto:joma.pagayona@gmail.com">here!</a></address>
+				</span>
+			</div>
 		<!-- Contact link -->
-		  <address>
-			Contact <a href="mailto:me@mailservice.com">me</a>
-		  </address>
+		
 		</div>
 	</footer>
 	</body>
