@@ -1,0 +1,6 @@
+
+@font-face {
+	font-family: 'futura';
+	src: local('futur'),
+		url('../static/fonts/futur.ttf') format("truetype");
+}
