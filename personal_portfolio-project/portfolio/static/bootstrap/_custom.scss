@@ -1,0 +1,31 @@
+$primary: #43196b;
+$secondary: #8e0a7a;
+$contrast: #e8560b;
+$skyblue: #5ea5b7;
+$cerulean: #107a88;
+$ocean_blue: #002945;
+
+@import url('https://fonts.googleapis.com/css2?family=Imbue:wght@500&display=swap');
+
+.background-primary {
+	background-color: rgba($primary, .95);
+}
+
+.text-custom-brand {
+	font-family: "Imbue", serif;
+	font-size: 1.75rem;
+}
+
+.footer-custom {
+	color: $navbar-dark-brand-color;
+}
+
+.footer-text-custom {
+	font-family: "Imbue", serif;
+	font-size: 1.25rem;
+}
+
+a, a:hover, a:focus, a.address-link {
+	text-decoration: none;
+	color: $contrast;
+}

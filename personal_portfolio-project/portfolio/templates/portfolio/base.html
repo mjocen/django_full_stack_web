@@ -15,14 +15,14 @@
   </head>
   <body>
 
-	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #8e0a7a;">
+	<nav class="navbar navbar-expand-lg navbar-dark background-primary" >
 	<div class="container">
-		<a class="navbar-brand" href="{% url 'home' %}" style="color: #FFFFFF; font-family: futura;">Josie Bytes</a>
+		<a class="navbar-brand text-custom-brand" href="{% url 'home' %}">Josie Bytes</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-		<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+		<ul class="navbar-nav ml-auto">
 			<li class="nav-item">
 				<a class="nav-link" aria-current="page" href="{% url 'blog:all_blogs' %}">Blog</a>
 			</li>
@@ -47,13 +47,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 	-->
 
-	<footer class="footer pt-3" style="background-color: #8e0a7a;">
+	<footer class="footer pt-3 footer-custom background-primary">
 		<div class="container">
 		<!-- Copyright footnote -->
 			<div class="row">
-				<h6 class="col">Josie Bytes © 2020</h6>
+				<h6 class="col footer-text-custom">Josie Bytes © 2020</h6>
 				<span class="col text-end">
-					<address>Contact me <a href="mailto:joma.pagayona@gmail.com">here!</a></address>
+					<address>Contact me <a class="address-link" href="mailto:joma.pagayona@gmail.com">here!</a></address>
 				</span>
 			</div>
 		<!-- Contact link -->

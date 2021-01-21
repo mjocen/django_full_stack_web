@@ -22,18 +22,20 @@
 	<div class="row">
 		{% for project in projects %}
 		<div class="col-lg-4 col-md-6">
+			<div class="card">
 
-			{% if project.url %}
-			<a href="{{ project.url }}">
-				<img src="{{ project.image.url}}" class="img-fluid">
-			</a>
-			{% else %}
+				{% if project.url %}
+				<a href="{{ project.url }}">
+					<img src="{{ project.image.url}}" class="card-img">
+				</a>
+				{% else %}
 
-			<img src="{{ project.image.url}}" class="img-fluid">
-			{% endif %}
-			<h3>{{ project.title }}</h3>
-			<p>{{ project.description }}</p>
+				<img src="{{ project.image.url}}" class="card-img">
+				{% endif %}
+				<h3 class="card-title">{{ project.title }}</h3>
+				<p class="card-body">{{ project.description }}</p>
 
+			</div>
 		</div>
 		{% endfor %}
 	</div>
