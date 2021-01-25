@@ -5,7 +5,7 @@
 {% load static %}
 
 <div class="row justify-content-center my-3">
-	<div class="text-center">
+	<div class="text-center col-lg-4">
 	  <img src="{% static 'portfolio/jocen-glasses.jpg' %}" class="img-fluid">
 	</div>
 </div>
@@ -33,7 +33,7 @@
 				<img src="{{ project.image.url}}" class="card-img">
 				{% endif %}
 				<h3 class="card-title">{{ project.title }}</h3>
-				<p class="card-body">{{ project.description }}</p>
+				<div class="card-body">{{ project.blurb_rendered | safe }}</div>
 
 			</div>
 		</div>
