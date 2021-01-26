@@ -12,7 +12,7 @@
 
 <div class="row justify-content-center mb-5">
 	<div class="text-center">
-		<h2 id="hometext" class="font-weight-bold">Mark Jocen Pagayona is an aspiring developer, navigating the vast tech out here and there!</h2>
+		<h2 id="hometext" class="font-weight-bold">Mark Jocen Pagayona is an aspiring web developer and data analyst, currently exploring Python-Django and TypeScript!</h2>
 	</div>
 </div>
 
@@ -25,14 +25,14 @@
 			<div class="card">
 
 				{% if project.url %}
-				<a href="{{ project.url }}">
-					<img src="{{ project.image.url}}" class="card-img">
-				</a>
+					<a href="{{ project.url }}">
+						<img src="{{ project.image.url }}" class="card-img">
+					</a>
 				{% else %}
 
 				<img src="{{ project.image.url}}" class="card-img">
 				{% endif %}
-				<h3 class="card-title">{{ project.title }}</h3>
+				<h3 class="card-title my-3">{{ project.title }}</h3>
 				<div class="card-body">{{ project.blurb_rendered | safe }}</div>
 
 			</div>

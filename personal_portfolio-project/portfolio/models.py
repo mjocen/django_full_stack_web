@@ -10,7 +10,7 @@ class Project(models.Model):
 	blurb_rendered = RenderedMarkdownField()
 	description = MarkdownField(rendered_field='text_rendered', validator=VALIDATOR_STANDARD)
 	text_rendered = RenderedMarkdownField()
-	image = models.ImageField(upload_to='portfolio/images/')
+	image = models.ImageField(upload_to='portfolio/images/', blank=True)
 	url = models.URLField(blank=True)
 	tags = TagField()
 
